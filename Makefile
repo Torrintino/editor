@@ -1,7 +1,7 @@
 .PHONY: clean
 
 kilo: kilo.c
-	$(CC) kilo.c -o kilo -Wall -Wextra -pedantic -std=c99
+	gcc kilo.c -o kilo -Wall -Wextra -pedantic -Werror -std=c99
 
 clean:
 	rm kilo
